@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+<head>
+	<title>Register</title>
+    <link rel="stylesheet" type="text/css" href="../css/css.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+    <script type="text/javascript" src="../js/login.js"></script>
+    <script type="text/javascript" src="../js/register.js"></script>
+    <script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+<header>  
+<span id="logreg"><span id="log" onclick="popDiv('login','back')">LOGIN</span> |
+<a id="reg" href="../register/register.html">REGISTER</a></span>
+<div id="back">
+    <div id="login"> 
+        <div id="logincontent">
+        <div id="close" onclick="hideDiv('login','back')">Close</div>
+        <div id="loretitle">LOGIN</div><hr/>
+        <form method="post" onsubmit="">
+            account:
+            <span><input id="aclogin" type="text" placeholder="input your ID"></span><br/>        
+            password：
+            <span><input id="pwlogin" type="password" name="password" placeholder="input your password" /></span>
+            <button id="findpw" onclick="fdpw()">find password</button><br/>
+            verification：
+            <span><input type="text" id="vcin" placeholder="input reversely"></span>
+            <span id="vcre"  title="click to reload" onclick="vcre.innerHTML=createCode()"></span><br/>
+        </form><hr/>
+        <div id="bottom">
+        <span id="start" onclick="test()" >Start your trip</span><br/>
+        <a href="../register/register.html">have no account?</a>
+        </div>
+        </div>
+    </div>
+</div>
+    <div class="wrapper">
+    <div class="brand">
+        <p><a href="../home.html"><img src="../image/logo.jpg" class="logo"></a></p>
+    </div>
+
+    <div class="rm-container">
+    <nav class="rm-nav rm-lighten">
+        <ul>
+            <li><a href="../home.html">HOME</a>
+            </li>
+            <li><a href="../Development/origin.html">DEVELOPMENT</a>
+                <ul>
+                    <li><a href="../Development/origin.html">Origin</a></li>
+                    <li><a href="../Development/transition.html">Transition</a></li>
+                    <li><a href="../Development/progress.html">Progress</a></li>
+                    <li><a href="../Development/actuality.html">Actuality</a></li>
+                </ul>
+            </li>
+            <li><a href="../Technology/tools.html">TECHNOLOGY</a>
+                <ul>
+                    <li><a href="../Technology/tools.html">Tools</a></li>
+                    <li><a href="../Technology/approaches.html">Approaches</a></li>
+                </ul>
+            </li>
+            <li><a href="../Application/science.html">APPLICATION</a>
+                <ul>
+                    <li><a href="../Application/science.html">Science</a></li>
+                    <li><a href="../Application/economy.html">Economy</a></li>
+                    <li><a href="../Application/culture.html">Culture</a></li>
+                    <li><a href="../Application/life.html">Life</a></li>
+                </ul>
+            </li>
+            <li><a href="../Contradiction/contradiction.html">CONTRADICTION</a></li>
+        </ul>
+    </nav>
+</div>
+</div>
+</header>
+	<div id="register">	
+		<div id="loretitle">Register</div><hr/>
+        <form method="post" onsubmit="">
+        Theses are necessary:<br/>
+             Account:
+             <span><input id="acreg" type="text" name="account" placeholder="input your ID" onfocus="checkId()" onblur="checkId()"></span>
+             <span><img id="acicon"></span><span id="acnote"></span><br/>
+
+             Password:
+             <span><input id="pwreg" type="password" name="password" placeholder="input your password" onfocus="checkPassword()" onblur="checkPassword()"></span>
+             <span><img id="pwicon"></span><span id="pwnote"></span><br/>
+
+             Confirm:
+             <span><input id="pw2in" type="password" name="password2" placeholder="input your password again"  onfocus="againPassword()" onblur="againPassword()"/></span>
+             <span><img id="pw2icon"></span><span id="pw2note"></span><br/>
+
+            E-mail:
+            <span><input id="emin" type="email" name="email" onfocus="emailCheck()" onblur="emailCheck()"></span>
+            <span><img id="emicon"></span><span id="emnote"></span><br/>
+        <hr/>
+
+        	Gender：
+            <span id="gd"><label for="male" ><input id="male" name="gender" type="radio">Male</label>&nbsp;&nbsp;&nbsp;<label for="female"><input id="female" name="gender" type="radio">Female</label></span><br/>
+
+            Constellation:
+            <span id="cs"><select name="Constellation">
+				<option>Capricorn</option><option>Aquarius</option><option>Pisces</option><option>Aries</option><option>Taurus</option><option>Gemini</option><option>Cancer</option><option>Leo</option><option>Virgo</option><option>Libra</option><option>Scorpio</option><option>Sagittarius</option>
+			</select></span> <br/>
+
+            Phone number:
+            <span id="phone"><input type="text"></span><br/>
+
+            QQ：
+            <span id="qq"><input type="text"></span><br/>
+        </form><hr/>
+
+   <div id="bottom">
+        <button id="finish" onclick="testAll()">Finish</button>
+        <button onclick="popDiv('login','back')">Login</button>
+   </div>
+</div>
+    <div id="footer">
+        <div id="focontet">
+            <img src="../image/logo.png" >
+    <br/><br/>More:<a href="../Team/team.html">Team</a>|<a href="../team/contact us.html">Contact us</a><br/>
+            Data Source:<a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>|<a href="http://www.soci.org/">SCI</a>|<a href="http://www.cnki.net/">China hownet</a>|<a href="https://www.baidu.com/">Baidu</a><br/>
+            Copyright © 2017 Terminator All Rights Reserved.
+        </div>
+    </div>
+<script>vcre.innerHTML=createCode();</script>
+</body>
+</html>

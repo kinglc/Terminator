@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+<head>
+	<title>Economy</title>
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script type="text/javascript" src="../js/login.js"></script>
+	<script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+<a id="gotop"></a>
+<header>  
+<span id="logreg"><span id="log" onclick="popDiv('login','back')">LOGIN</span> |
+<a id="reg" href="../register/register.html">REGISTER</a></span>
+	<div id="back">
+    <div id="login"> 
+        <div id="logincontent">
+        <div id="close" onclick="hideDiv('login','back')">Close</div>
+        <div id="loretitle">LOGIN</div><hr/>
+        <form method="post" onsubmit="">
+            account:
+            <span><input id="aclogin" type="text" placeholder="input your ID"></span><br/>        
+            password：
+            <span><input id="pwlogin" type="password" name="password" placeholder="input your password" /></span>
+            <button id="findpw" onclick="fdpw()">find password</button><br/>
+            verification：
+            <span><input type="text" id="vcin" placeholder="input reversely"></span>
+            <span id="vcre"  title="click to reload" onclick="vcre.innerHTML=createCode()"></span><br/>
+        </form><hr/>
+        <div id="bottom">
+        <span id="start" onclick="test()" >Start your trip</span><br/>
+        <a href="../register/register.html">have no account?</a>
+        </div>
+        </div>
+    </div>
+</div>
+	<div class="wrapper">
+	<div class="brand">
+		<p><a href="../home.html"><img src="../image/logo.jpg" class="logo"></a></p>
+	</div>
+
+	<div class="rm-container">
+	<nav class="rm-nav rm-lighten">
+		<ul>
+			<li><a href="../home.html">HOME</a>
+			</li>
+            <li><a href="../Development/origin.html">DEVELOPMENT</a>
+                <ul>
+                    <li><a href="../Development/origin.html">Origin</a></li>
+                    <li><a href="../Development/transition.html">Transition</a></li>
+                    <li><a href="../Development/progress.html">Progress</a></li>
+                    <li><a href="../Development/actuality.html">Actuality</a></li>
+                </ul>
+            </li>
+			<li><a href="../Technology/tools.html">TECHNOLOGY</a>
+				<ul>
+					<li><a href="../Technology/tools.html">Tools</a></li>
+					<li><a href="../Technology/approaches.html">Approaches</a></li>
+				</ul>
+			</li>
+			<li><a href="../Application/science.html">APPLICATION</a>
+				<ul>
+					<li><a href="../Application/science.html">Science</a></li>
+					<li><a href="../Application/economy.html">Economy</a></li>
+					<li><a href="../Application/culture.html">Culture</a></li>
+					<li><a href="../Application/life.html">Life</a></li>
+				</ul>
+			</li>
+			<li><a href="../Contradiction/contradiction.html">CONTRADICTION</a></li>
+		</ul>
+	</nav>
+</div>
+</div>
+</header>
+	<a href="#gotop"><img id="top" src="../image/top.png"></a>
+	<div id="content">
+	<div id="maintitle">
+		<h1>Economy</h1>
+	</div><hr/>
+	<div class="title">
+		<h2>Algorithmic Trading</h2>
+	</div>
+	<p>Algorithmic trading involves the use of complex AI systems to make trading decisions at speeds several orders of magnitudes greater than any human is capable of, often making millions of trades in a day without any human intervention. Automated trading systems are typically used by large institutional investors.</p>
+	<br/><hr/>
+
+	<div class="title">
+		<h2>Market Analysis and Data Mining</h2>
+	</div>
+	<div class="imgleft"><img src="image/economy.jpg"></div>
+		<p>Several large financial institutions have invested in AI engines to assist with their investment practices. BlackRock's AI engine, Aladdin, is used both within the company and to clients to help with investment decisions. Its wide range of functionalities includes the use of natural language processing to read text such as news, broker reports, and social media feeds. It then gauges the sentiment on the companies mentioned and assigns a score. Banks such as UBS and Deutsche Bank use an AI engine called Sqreem (Sequential Quantum Reduction and Extraction Model) which can mine data to develop consumer profiles and match them with the wealth management products they most likely want.Goldman Sachs uses Kensho, a market analytics platform that combines statistical computing with big data and natural language processing. Its machine learning systems mine through hoards of data on the web and assess correlations between world events and their impact on asset prices.Information Extraction, part of artificial intelligence, is used to extract information from live news feed and to assist with investment decisions.</p>
+	<br/><hr/>
+
+	<div class="title">
+		<h2>Personal Finance</h2>
+	</div>
+	<div class="imgright"><img src="image/economy1.jpg"></div>
+	<p>Several products are emerging that utilize AI to assist people with their personal finances. For example, Digit is an app powered by artificial intelligence that automatically helps consumers optimize their spending and savings based on their own personal habits and goals. The app can analyze factors such as monthly income, current balance, and spending habits, then make its own decisions and transfer money to the savings account.Wallet.AI, an upcoming startup in San Francisco, builds agents that analyze data that a consumer would leave behind, from Smartphone check-ins to tweets, to inform the consumer about their spending behavior.</p>
+	<br/><hr/>
+
+	<div class="title">
+		<h2>Portfolio Management</h2>
+	</div>
+	<p>Robo-advisors are becoming more widely used in the investment management industry. Robo-advisors provide financial advice and portfolio management with minimal human intervention. This class of financial advisers work based on algorithms built to automatically develop a financial portfolio according to the investment goals and risk tolerance of the clients. It can adjust to real-time changes in the market and accordingly calibrate the portfolio.</p>
+	<br/><hr/>
+
+	<div class="title">
+		<h2>Underwriting</h2>
+	</div>
+	<p>An online lender, Upstart, analyze vast amounts of consumer data and utilizes machine learning algorithms to develop credit risk models that predict a consumer's likelihood of default. Their technology will be licensed to banks for them to leverage for their underwriting processes as well.</p>
+	<p>ZestFinance developed their Zest Automated Machine Learning (ZAML) Platform specifically for credit underwriting as well. This platform utilizes machine learning to analyze tens of thousands traditional and nontraditional variables (from purchase transactions to how a customer fills out a form) used in the credit industry to score borrowers. The platform is particularly useful to assign credit scores to those with limited credit histories, such as millennials.</p>
+	<br/><br/><br/><br/>
+</div>
+
+<div id="footer">
+<div id="focontet">
+	<img src="../image/logo.png" >
+			<br/><br/>More:<a href="../Team/team.html">Team</a>|<a href="../Team/contact us.html">Contact us</a><br/>
+	Data Source:<a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>|<a href="http://www.soci.org/">SCI</a>|<a href="http://www.cnki.net/">China hownet</a>|<a href="https://www.baidu.com/">Baidu</a><br/>
+    Copyright © 2017 Terminator All Rights Reserved.</div>
+</div>
+<script>vcre.innerHTML=createCode();</script>
+</body>
+</html>

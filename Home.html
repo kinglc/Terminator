@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Teiminator</title>
+	<link rel="stylesheet" href="css/css.css" />
+	<link rel="stylesheet" href="css/Home.css" />
+	<link rel="stylesheet" href="css/login.css" />
+    <script src="js/login.js" type="text/javascript"></script>
+	<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+	<script src="js/Home.js" type="text/javascript"></script>
+</head>
+<body onload="doSlide();">
+<header>
+	<span id="logreg"><span id="log" onclick="popDiv('login','back')">LOGIN</span> |
+	<a id="reg" href="register/register.html">REGISTER</a></span>
+<div id="back">
+    <div id="login"> 
+        <div id="logincontent">
+        <div id="close" onclick="hideDiv('login','back')">Close</div>
+        <div id="loretitle">LOGIN</div><hr/>
+        <form method="post" onsubmit="">
+            account:
+            <span id="aclogin"><input type="text" name="account" placeholder="input your ID"></span><br/>        
+            password：
+            <span><input id="pwlogin" type="password" name="password" placeholder="input your password" /></span>
+            <button id="findpw" onclick="fdpw2()">find password</button><br/>
+            verification：
+            <span><input type="text" id="vcin" placeholder="input reversely"></span>
+            <span id="vcre"  title="click to reload" onclick="vcre.innerHTML=createCode()"></span><br/>
+        </form><hr/>
+        <div id="bottom">
+        <span id="start" onclick="test()">Start your trip</span><br/>
+        <a href="register/register.html">have no account?</a>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+<div class="brand">
+	<p><a href="home.html"><img src="image/logo.jpg" class="logo"></a></p>
+</div>
+
+<div class="rm-container">
+	<nav class="rm-nav rm-lighten">
+		<ul>
+			<li><a href="home.html">HOME</a>
+			</li>
+			<li><a href="Development/origin.html">DEVELOPMENT</a>
+				<ul>
+					<li><a href="Development/origin.html">Origin</a></li>
+					<li><a href="Development/transition.html">Transition</a></li>
+					<li><a href="Development/progress.html">Progress</a></li>
+					<li><a href="Development/actuality.html">Actuality</a></li>
+				</ul>
+			</li>
+			<li><a href="Technology/tools.html">TECHNOLOGY</a>
+				<ul>
+					<li><a href="Technology/tools.html">Tools</a></li>
+					<li><a href="Technology/approaches.html">Approaches</a></li>
+				</ul>
+			</li>
+			<li><a href="Application/science.html">APPLICATION</a>
+				<ul>
+					<li><a href="Application/science.html">Science</a></li>
+					<li><a href="Application/economy.html">Economy</a></li>
+					<li><a href="Application/culture.html">Culture</a></li>
+					<li><a href="Application/life.html">Life</a></li>
+				</ul>
+			</li>
+			<li><a href="Contradiction/contradiction.html">CONTRADICTION</a></li>
+		</ul>
+	</nav>
+</div>
+</div>
+</header>
+<div class="weizhi">
+	<div class="flip-slider">
+		<div class="flip-frame">
+			<div id="lunbo">
+				<img src="./image/home1.jpg">
+				<img src="./image/home2.jpg">
+				<img src="./image/home3.jpg">
+				<img src="./image/home4.jpg">
+				<img src="./image/home5.jpg">
+				<img src="./image/home6.jpg">
+				<img src="./image/home7.jpg">
+				<img src="./image/home8.jpg">
+				<img src="./image/home9.jpg">
+				<img src="./image/home10.jpg">
+				<img src="./image/home11.jpg">
+				<img src="./image/home12.jpg">
+			</div>	
+		</div>
+</div>
+</div>
+<script type="text/javascript" src="js/Home.js"></script>
+<div>
+	<img src="./image/theme.png" id="theme">
+</div>
+<div id="footer">
+<div id="focontet">
+	<img src="image/logo.png" >
+	<br/><br/>More:<a href="Team/team.html">Team</a>|<a href="team/contact us.html">Contact us</a><br/>
+	Data Source:<a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>|<a href="http://www.soci.org/">SCI</a>|<a href="http://www.cnki.net/">China hownet</a>|<a href="https://www.baidu.com/">Baidu</a><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright © 2017 Terminator All Rights Reserved.</div>
+</div>
+<script type="text/javascript">vcre.innerHTML=createCode();</script>
+</body>
+</html>

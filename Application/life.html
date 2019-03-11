@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+<head>
+	<title>Life</title>
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script type="text/javascript" src="../js/login.js"></script>
+	<script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+<a id="gotop"></a>
+<header>  
+<span id="logreg"><span id="log" onclick="popDiv('login','back')">LOGIN</span> |
+<a id="reg" href="../register/register.html">REGISTER</a></span>
+	<div id="back">
+    <div id="login"> 
+        <div id="logincontent">
+        <div id="close" onclick="hideDiv('login','back')">Close</div>
+        <div id="loretitle">LOGIN</div><hr/>
+        <form method="post" onsubmit="">
+            account:
+            <span><input id="aclogin" type="text" placeholder="input your ID"></span><br/>        
+            password：
+            <span><input id="pwlogin" type="password" name="password" placeholder="input your password" /></span>
+            <button id="findpw" onclick="fdpw()">find password</button><br/>
+            verification：
+            <span><input type="text" id="vcin" placeholder="input reversely"></span>
+            <span id="vcre"  title="click to reload" onclick="vcre.innerHTML=createCode()"></span><br/>
+        </form><hr/>
+        <div id="bottom">
+        <span id="start" onclick="test()" >Start your trip</span><br/>
+        <a href="../register/register.html">have no account?</a>
+        </div>
+        </div>
+    </div>
+</div>
+	<div class="wrapper">
+	<div class="brand">
+		<p><a href="../home.html"><img src="../image/logo.jpg" class="logo"></a></p>
+	</div>
+
+	<div class="rm-container">
+	<nav class="rm-nav rm-lighten">
+		<ul>
+			<li><a href="../home.html">HOME</a>
+			</li>
+            <li><a href="../Development/origin.html">DEVELOPMENT</a>
+                <ul>
+                    <li><a href="../Development/origin.html">Origin</a></li>
+                    <li><a href="../Development/transition.html">Transition</a></li>
+                    <li><a href="../Development/progress.html">Progress</a></li>
+                    <li><a href="../Development/actuality.html">Actuality</a></li>
+                </ul>
+            </li>
+			<li><a href="../Technology/tools.html">TECHNOLOGY</a>
+				<ul>
+					<li><a href="../Technology/tools.html">Tools</a></li>
+					<li><a href="../Technology/approaches.html">Approaches</a></li>
+				</ul>
+			</li>
+			<li><a href="../Application/science.html">APPLICATION</a>
+				<ul>
+					<li><a href="../Application/science.html">Science</a></li>
+					<li><a href="../Application/economy.html">Economy</a></li>
+					<li><a href="../Application/culture.html">Culture</a></li>
+					<li><a href="../Application/life.html">Life</a></li>
+				</ul>
+			</li>
+			<li><a href="../Contradiction/contradiction.html">CONTRADICTION</a></li>
+		</ul>
+	</nav>
+</div>
+</div>
+</header>
+	<a href="#gotop"><img id="top" src="../image/top.png"></a>
+	<div id="content">
+	<div id="maintitle">
+		<h1>Life</h1>
+	</div><hr/>
+	<div class="title">
+		<h2>Human Resources & Recruiting</h2>
+	</div>
+	<div class="imgleft"><img src="image/life1.jpg"></div>
+		<p>Another application of AI is in the human resources and recruiting space. There are three ways AI is being used by human resources and recruiting professionals. AI is used to screen resumes and rank candidates according to their level of qualification. Ai is also used to predict candidate success in given roles through job matching platforms. And now, AI is rolling out recruiting chat bots that can automate repetitive communication tasks.</p>
+		<p>Typically, resume screening involves a recruiter or other HR professional scanning through a database of resumes. Now startups like Pomato, are creating machine learning algorithms to automate resume screening processes. Pomato's resume screening AI focuses on automating validating technical applicants for technical staffing firms. Pomato's AI performs over 200,000 computations on each resume in seconds then designs a custom technical interview based on the mined skills.</p>
+		<p>From 2016 to 2017, consumer goods company Unilever used artificial intelligence to screen all entry level employees. Unilever's AI used neuroscience based games, recorded interviews, and facial/speech analysis to predict hiring success. Unilever partnered with Pymetrics and HireVue to enable its novel AI based screening and increased their applicants from 15,000 to 30,000 in a single year.Recruiting with AI also produced Unililever's most diverse class to date.Unilever also decreased time to hire from 4 months to 4 weeks and saved over 50,000 hours of recruiter time.</p>
+		<p>From resume screening to neuroscience, speech recognition, and facial analysis...it's clear AI are having a massive impact on the human resources field. The latest development in AI is in recruiting chatbots. TextRecruit, a Bay Area startup, released Ari (automated recruiting interface.) Ari is a recruiting chatbot that is designed to hold two way texting conversations with candidates. Ari automates posting jobs, advertising openings, screening candidates, scheduling interviews, and nurturing candidate relationships with updates as they progress along the hiring funnel. Ari is currently offered as part of TextRecruit's candidate engagement platform.</p>
+	<br/><hr/>
+
+	<div class="title">
+		<h2>Hospitals and medicine</h2>
+	</div>
+	<div class="imgright"><img src="image/life2.jpg"></div>
+		<p>Artificial neural networks are used as clinical decision support systems for medical diagnosis, such as in Concept Processing technology in EMR software.</p>
+		<p>Other tasks in medicine that can potentially be performed by artificial intelligence and are beginning to be developed include:</p>
+		<p>Computer-aided interpretation of medical images. Such systems help scan digital images, e.g. from computed tomography, for typical appearances and to highlight conspicuous sections, such as possible diseases. A typical application is the detection of a tumor.</p>
+		<p>Heart sound analysis<br/>
+		Watson project is another use of AI in this field, a Q/A program that suggest for doctor's of cancer patients.<br/>
+		Companion robots for the care of the elderly<br/>
+		Mining medical records to provide more useful information<br/>
+		Design treatment plans<br/>
+		Assist in repetitive jobs including medication management<br/>
+		Provide consultations<br/>
+		Drug creation<br/>
+		Using avatars in place of patients for clinical training<br/>
+		In histopathology, artificial intelligence can automate the tissue diagnosis routine work.<br/>
+		Currently, there are over 90 AI startups in the health industry working in these fields.<br/>
+		</p>
+	<br/><hr/>
+
+	<div class="title">
+		<h2>Telecommunications maintenance</h2>
+	</div>
+	<p>Many telecommunications companies make use of heuristic search in the management of their workforces, for example BT Group has deployed heuristic search in a scheduling application that provides the work schedules of 20,000 engineers.</p>
+	<hr/>
+
+	<div class="title">
+		<h2>Online and telephone customer service</h2>
+	</div>
+	<div class="imgright"><img src="image/life3.png"></div>
+		<p>An automated online assistant providing customer service on a web page.</p>
+		<p>Artificial intelligence is implemented in automated online assistants that can be seen as avatars on web pages.It can avail for enterprises to reduce their operation and training cost.A major underlying technology to such systems is natural language processing.Pypestream uses automated customer service for its mobile application designed to streamline communication with customers.</p>
+		<p>Currently, major companies are investing in AI to handle difficult customer in the future. Google's most recent development analyzes language and converts speech into text. The platform can identify angry customers through their language and respond appropriately.</p>
+		<p>Companies have been working on different aspects of customer service to improve this aspect of a company.</p>
+		<p>Digital Genius, an AI start-up, researches the database of information (from past conversations and frequently asked questions) more efficiently and provide prompts to agents to help them resolve queries more efficiently.</p>
+		<p>IPSoft is creating technology with emotional intelligence to adapt the customer's interaction. The response is linked to the customer's tone, with the objective of being able to show empathy. Another element IPSoft is developing is the ability to adapt to different tones or languages.</p>
+		<p>Inbenta's is focused on developing natural language. In other words, on understanding the meaning behind what someone is asking and not just looking at the words used, using context and natural language processing. One customer service element Ibenta has already achieved is its ability to respond in bulk to email queries.</p>
+	<br/><br/><br/><br/>
+	</div>
+	
+<div id="footer">
+<div id="focontet">
+	<img src="../image/logo.png" >
+			<br/><br/>More:<a href="../Team/team.html">Team</a>|<a href="../Team/contact us.html">Contact us</a><br/>
+	Data Source:<a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>|<a href="http://www.soci.org/">SCI</a>|<a href="http://www.cnki.net/">China hownet</a>|<a href="https://www.baidu.com/">Baidu</a><br/>
+    Copyright © 2017 Terminator All Rights Reserved.</div>
+</div>
+<script>vcre.innerHTML=createCode();</script>
+</body>
+</html>

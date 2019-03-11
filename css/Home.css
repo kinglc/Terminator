@@ -1,0 +1,96 @@
+﻿*{
+	margin:0;
+}
+
+body{
+	overflow: hidden;
+	margin: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background-image:url("../image/homeback.jpg");
+    background-size: 100%;
+}
+/*轮播图框架*/
+.flip-frame{
+	border: 10px solid #D5D6E2;
+	border-radius: 10px;
+	height: 300px;
+	margin: 20px auto;
+	width: 500px;
+	perspective: 1000px;
+}
+
+.flip-frame .slide{
+	box-sizing: border-box;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: -999em;
+	width: 100%;
+}
+
+/*轮播框架定位*/
+.weizhi{
+	position: relative;
+	top: 4em;
+	left:25em;
+	clear: both;
+}
+/*版权区*/
+#footer{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0,0,0,0.9);
+	position: absolute;
+	bottom: 0;
+}
+#footer a{
+	color: white;
+}
+#footer a:hover{
+	color:#7F7F7F;
+}
+#focontet{
+		font-size: 17px;
+		color: white;
+		width: 600px;
+		height: 100px;
+		margin:0 auto;
+		text-align: center;
+		font-weight: lighter;
+		position: relative;
+		bottom: 30px;
+}
+#footer img{
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: relative;
+	bottom: -30px;
+}
+/*轮播图片定位及显示隐藏属性*/
+#lunbo{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+}
+#lunbo img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.show{
+    opacity: 1;
+    transition-duration: 1s;
+}
+.hide{
+    opacity: 0;
+    transition-duration: 1s;
+}
+/*Home页面艺术字*/
+#theme{
+	top: 30%;
+	position: absolute;
+	left: 20%;
+}

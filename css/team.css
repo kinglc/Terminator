@@ -1,0 +1,83 @@
+@charset="utf-8"
+*{
+	margin:0;
+}
+body{
+	font-size: 30px;
+	overflow: hidden;
+	background-image: url('../team/image/back.jpg');
+	background-size: 100%;
+}
+/*头像大小*/
+.mar img{
+	width: 190px;
+	height: 190px;
+	cursor: pointer;
+}
+/*中部主题*/
+#theme{
+	width: 45%;
+	height: 50%;
+	top:150px;
+	left: 30%;
+	position: absolute;
+}
+/*资料介绍*/
+#jc,#cjy,#zj,#qfy{
+	font-size: 25px;
+	font-family: 华文新魏;
+	display: none;
+	margin: 0 auto;
+	top:120px;
+	left: 25%;
+	position: absolute;
+	line-height: 45px;
+	padding: 5px;
+	z-index: 100;
+	width: 50%;
+	height: 60%;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 10px;
+}
+/*资料图片*/
+#jc img,#cjy img,#zj img,#qfy img{
+	width: 40%;
+	height: 90%;
+	float: left;
+	padding:10px;
+	padding-right: 20px;
+}
+/*四人头像位置*/
+#jc1{
+	opacity: 0.5;
+	position: absolute;
+	top: 110px;
+	left: 1em;
+}
+#cjy1{
+	opacity: 0.5;
+	position: absolute;
+	bottom: 100px;
+	left:1em;	
+}
+#zj1{
+	opacity: 0.5;
+	position: absolute;
+	right:1em;
+	top:110px;
+}
+#qfy1{
+	opacity: 0.5;
+	position: absolute;
+	bottom: 100px;
+	right:1em;
+}
+#jc1:hover,#cjy1:hover,#zj1:hover,#qfy1:hover{
+	opacity: 1;
+}
+/*版权区*/
+#footer{
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.9);
+}

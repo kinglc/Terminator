@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
+    <title>Approaches</title>
+    <link rel="stylesheet" type="text/css" href="../css/css.css">
+    <link rel="stylesheet" type="text/css" href="../css/subnav.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script type="text/javascript" src="../js/login.js"></script>
+    <script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+<a id="gotop"></a>
+<header>  
+<span id="logreg"><span id="log" onclick="popDiv('login','back')">LOGIN</span> |
+<a id="reg" href="../register/register.html">REGISTER</a></span>
+    <div id="back">
+    <div id="login"> 
+        <div id="logincontent">
+        <div id="close" onclick="hideDiv('login','back')">Close</div>
+        <div id="loretitle">LOGIN</div><hr/>
+        <form method="post" onsubmit="">
+            account:
+            <span><input id="aclogin" type="text" placeholder="input your ID"></span><br/>        
+            password：
+            <span><input id="pwlogin" type="password" name="password" placeholder="input your password" /></span>
+            <button id="findpw" onclick="fdpw()">find password</button><br/>
+            verification：
+            <span><input type="text" id="vcin" placeholder="input reversely"></span>
+            <span id="vcre"  title="click to reload" onclick="vcre.innerHTML=createCode()"></span><br/>
+        </form><hr/>
+        <div id="bottom">
+        <span id="start" onclick="test()" >Start your trip</span><br/>
+        <a href="../register/register.html">have no account?</a>
+        </div>
+        </div>
+    </div>
+</div>
+    <div class="wrapper">
+    <div class="brand">
+        <p><a href="../home.html"><img src="../image/logo.jpg" class="logo"></a></p>
+    </div>
+
+    <div class="rm-container">
+    <nav class="rm-nav rm-lighten">
+        <ul>
+            <li><a href="../home.html">HOME</a>
+            </li>
+            <li><a href="../Development/origin.html">DEVELOPMENT</a>
+                <ul>
+                    <li><a href="../Development/origin.html">Origin</a></li>
+                    <li><a href="../Development/transition.html">Transition</a></li>
+                    <li><a href="../Development/progress.html">Progress</a></li>
+                    <li><a href="../Development/actuality.html">Actuality</a></li>
+                </ul>
+            </li>
+            <li><a href="../Technology/tools.html">TECHNOLOGY</a>
+                <ul>
+                    <li><a href="../Technology/tools.html">Tools</a></li>
+                    <li><a href="../Technology/approaches.html">Approaches</a></li>
+                </ul>
+            </li>
+            <li><a href="../Application/science.html">APPLICATION</a>
+                <ul>
+                    <li><a href="../Application/science.html">Science</a></li>
+                    <li><a href="../Application/economy.html">Economy</a></li>
+                    <li><a href="../Application/culture.html">Culture</a></li>
+                    <li><a href="../Application/life.html">Life</a></li>
+                </ul>
+            </li>
+            <li><a href="../Contradiction/contradiction.html">CONTRADICTION</a></li>
+        </ul>
+    </nav>
+</div>
+</div>
+    </header>
+	<a href="#gotop"><img id="top" src="../image/top.png"></a>
+    
+    <div id="subnav">
+        <ul>
+            <li><a href="#w1">Approaches</a></li>
+            <li><a href="#w2">Cybernatics and brain simulation</a></li>
+            <li><a href="#w3">Symbolic</a></li>
+            <ul>
+                <li><a href="#s1">Cognitive simulation</a></li>
+                <li><a href="#s2">Logic-based</a></li>
+                <li><a href="#s3">Anti-logic or scruffy</a></li>
+                <li><a href="#s4">Knowledge-based</a></li>
+                <li><a href="#s5">Sub-symbolic</a></li>
+                <li><a href="#s6">Embodied intelligence</a></li>
+                <li><a href="#s7">Computational intelligence and <br />soft computing</a></li>
+            </ul>
+            <li style="color:white"><a href="#w4">Statistical</a></li>
+            <li style="color:white"><a href="#w5">Integrating the approaches</a></li>
+        </ul>
+
+    </div>
+
+    <div id="content">
+        <div id="maintitle">
+            <a name="w1"></a>
+            <h1>Approaches</h1><hr />
+        </div>
+        <p>
+            There is no established unifying theory or paradigm that guides AI research. Researchers disagree about many issues. A few of the most long standing questions that have remained unanswered are these: should artificial intelligence simulate natural intelligence by studying psychology or neurology? Or is human biology as irrelevant to AI research as bird biology is to aeronautical engineering? Can intelligent behavior be described using simple, elegant principles (such as logic or optimization)? Or does it necessarily require solving a large number of completely unrelated problems? Can intelligence be reproduced using high-level symbols, similar to words and ideas? Or does it require "sub-symbolic" processing? John Haugeland, who coined the term GOFAI (Good Old-Fashioned Artificial Intelligence), also proposed that AI should more properly be referred to as synthetic intelligence, a term which has since been adopted by some non-GOFAI researchers.
+        </p>
+        <p>
+            Stuart Shapiro divides AI research into three approaches, which he calls computational psychology, computational philosophy, and computer science. Computational psychology is used to make computer programs that mimic human behavior. Computational philosophy, is used to develop an adaptive, free-flowing computer mind. Implementing computer science serves the goal of creating computers that can perform tasks that only people could previously accomplish. Together, the humanesque behavior, mind, and actions make up artificial intelligence.
+        </p>
+        <br /><hr />
+        
+        <div class="title">
+            <a name="w2"></a>
+            <h2>Cybernetics and brain simulation</h2>
+        </div>
+        <img src="image/image1.jpg" class="imgleft" width="450px" height="250px" />
+        <p>
+            Main articles: Cybernetics and Computational neuroscience
+        </p>
+        <p>
+            In the 1940s and 1950s, a number of researchers explored the connection between neurology, information theory, and cybernetics. Some of them built machines that used electronic networks to exhibit rudimentary intelligence, such as W. Grey Walter's turtles and the Johns Hopkins Beast. Many of these researchers gathered for meetings of the Teleological Society at Princeton University and the Ratio Club in England. By 1960, this approach was largely abandoned, although elements of it would be revived in the 1980s.
+        </p>
+        <br /><br /><hr />
+
+        <div class="title">
+            <a name="w3"></a>
+            <h2>Symbolic</h2>
+        </div>
+        <img src="image/image3.jpg" class="imgright" width="450px" height="250px">
+        <p>
+            Main article: Symbolic AI
+        </p>
+        <p>
+            When access to digital computers became possible in the middle 1950s, AI research began to explore the possibility that human intelligence could be reduced to symbol manipulation. The research was centered in three institutions: Carnegie Mellon University, Stanford and MIT, and each one developed its own style of research. John Haugeland named these approaches to AI "good old fashioned AI" or "GOFAI". During the 1960s, symbolic approaches had achieved great success at simulating high-level thinking in small demonstration programs. Approaches based on cybernetics or neural networks were abandoned or pushed into the background. Researchers in the 1960s and the 1970s were convinced that symbolic approaches would eventually succeed in creating a machine with artificial general intelligence and considered this the goal of their field.
+        </p>
+
+        <h3>Cognitive simulation</h3>
+        <a name="s1"></a>
+        <p>
+            Economist Herbert Simon and Allen Newell studied human problem-solving skills and attempted to formalize them, and their work laid the foundations of the field of artificial intelligence, as well as cognitive science, operations research and management science. Their research team used the results of psychological experiments to develop programs that simulated the techniques that people used to solve problems. This tradition, centered at Carnegie Mellon University would eventually culminate in the development of the Soar architecture in the middle 1980s.
+        </p>
+
+        <h3>Logic-based</h3>
+        <a name="s2"></a>
+        <p>
+            Unlike Newell and Simon, John McCarthy felt that machines did not need to simulate human thought, but should instead try to find the essence of abstract reasoning and problem solving, regardless of whether people used the same algorithms. His laboratory at Stanford (SAIL) focused on using formal logic to solve a wide variety of problems, including knowledge representation, planning and learning. Logic was also the focus of the work at the University of Edinburgh and elsewhere in Europe which led to the development of the programming language Prolog and the science of logic programming.
+        </p>
+        <br />
+        <img src="image/image11.jpg" class="imgleft" width="340" height="280">
+        <h3>Anti-logic or scruffy</h3>
+        <a name="s3"></a>
+        <p>
+            Researchers at MIT (such as Marvin Minsky and Seymour Papert) found that solving difficult problems in vision and natural language processing required ad-hoc solutions C they argued that there was no simple and general principle (like logic) that would capture all the aspects of intelligent behavior. Roger Schank described their "anti-logic" approaches as "scruffy" (as opposed to the "neat" paradigms at CMU and Stanford). Commonsense knowledge bases (such as Doug Lenat's Cyc) are an example of "scruffy" AI, since they must be built by hand, one complicated concept at a time.
+        </p>
+
+        <h3>Knowledge-based</h3>
+        <a name="s4"></a>
+        <p>
+            When computers with large memories became available around 1970, researchers from all three traditions began to build knowledge into AI applications. This "knowledge revolution" led to the development and deployment of expert systems (introduced by Edward Feigenbaum), the first truly successful form of AI software. The knowledge revolution was also driven by the realization that enormous amounts of knowledge would be required by many simple AI applications.
+        </p>
+
+        <h3>Sub-symbolic</h3>
+        <a name="s5"></a>
+        <p>
+            By the 1980s progress in symbolic AI seemed to stall and many believed that symbolic systems would never be able to imitate all the processes of human cognition, especially perception, robotics, learning and pattern recognition. A number of researchers began to look into "sub-symbolic" approaches to specific AI problems. Sub-symbolic methods manage to approach intelligence without specific representations of knowledge.
+        </p>
+
+        <h3>Embodied intelligence</h3>
+        <a name="s6"></a>
+        <p>
+            This includes embodied, situated, behavior-based, and nouvelle AI. Researchers from the related field of robotics, such as Rodney Brooks, rejected symbolic AI and focused on the basic engineering problems that would allow robots to move and survive. Their work revived the non-symbolic viewpoint of the early cybernetics researchers of the 1950s and reintroduced the use of control theory in AI. This coincided with the development of the embodied mind thesis in the related field of cognitive science: the idea that aspects of the body (such as movement, perception and visualization) are required for higher intelligence.
+        </p>
+
+        <h3>Computational intelligence and soft computing</h3>
+        <a name="s7"></a>
+        <p>
+            Interest in neural networks and "connectionism" was revived by David Rumelhart and others in the middle of 1980s. Neural networks are an example of soft computing --- they are solutions to problems which cannot be solved with complete logical certainty, and where an approximate solution is often sufficient. Other soft computing approaches to AI include fuzzy systems, evolutionary computation and many statistical tools. The application of soft computing to AI is studied collectively by the emerging discipline of computational intelligence.
+        </p>
+        <br /><hr />
+
+        <div class="title">
+            <a name="w4"></a>
+            <h2>Statistical</h2>
+        </div>
+        <img src="image/image6.jpg" class="imgleft" width="400px" height="250px"/>
+        <p>
+            In the 1990s, AI researchers developed sophisticated mathematical tools to solve specific subproblems. These tools are truly scientific, in the sense that their results are both measurable and verifiable, and they have been responsible for many of AI's recent successes. The shared mathematical language has also permitted a high level of collaboration with more established fields (like mathematics, economics or operations research). Stuart Russell and Peter Norvig describe this movement as nothing less than a "revolution" and "the victory of the neats". Critics argue that these techniques (with few exceptions) are too focused on particular problems and have failed to address the long-term goal of general intelligence. There is an ongoing debate about the relevance and validity of statistical approaches in AI, exemplified in part by exchanges between Peter Norvig and Noam Chomsky.
+        </p>
+        <br /><hr />
+
+        <div class="title">
+            <a name="w5"></a>
+            <h2>Integrating the approaches</h2>
+        </div>
+        <img src="image/image4.jpg" class="imgright" width="380px" height="240px">
+        <h3>Intelligent agent paradigm</h3>
+        <p>
+            An intelligent agent is a system that perceives its environment and takes actions which maximize its chances of success. The simplest intelligent agents are programs that solve specific problems. More complicated agents include human beings and organizations of human beings (such as firms). The paradigm gives researchers license to study isolated problems and find solutions that are both verifiable and useful, without agreeing on one single approach. An agent that solves a specific problem can use any approach that works - some agents are symbolic and logical, some are sub-symbolic neural networks and others may use new approaches. The paradigm also gives researchers a common language to communicate with other fields-such as decision theory and economics-that also use concepts of abstract agents. The intelligent agent paradigm became widely accepted during the 1990s.
+        </p>
+        <br />
+        <h3>Agent architectures and cognitive architectures</h3>
+        <p>
+            Researchers have designed systems to build intelligent systems out of interacting intelligent agents in a multi-agent system. A system with both symbolic and sub-symbolic components is a hybrid intelligent system, and the study of such systems is artificial intelligence systems integration. A hierarchical control system provides a bridge between sub-symbolic AI at its lowest, reactive levels and traditional symbolic AI at its highest levels, where relaxed time constraints permit planning and world modelling. Rodney Brooks' subsumption architecture was an early proposal for such a hierarchical system.
+        </p>
+        <br /><br /><br /><br />
+    </div>
+    <div id="footer">
+		<div id="focontet">
+			<img src="../image/logo.png" >
+            <br/><br/>More:<a href="../Team/team.html">Team</a>|<a href="../Team/contact us.html">Contact us</a><br/>
+			Data Source:<a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>|<a href="http://www.soci.org/">SCI</a>|<a href="http://www.cnki.net/">China hownet</a>|<a href="https://www.baidu.com/">Baidu</a><br/>
+		    Copyright © 2017 Terminator All Rights Reserved.
+	    </div>
+	</div>
+<script>vcre.innerHTML=createCode();</script>
+</body>
+</html>

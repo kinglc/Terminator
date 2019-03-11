@@ -1,0 +1,105 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Contact us</title>
+    <link rel="stylesheet" type="text/css" href="../css/css.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" type="text/css" href="../css/contact us.css">
+    <script type="text/javascript" src="../js/login.js"></script>
+    <script type="text/javascript" src="../js/contact us.js"></script>
+    <script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+</head>    
+<body>
+<script>onload="move()";</script>
+	<header>
+	<span id="logreg"><span id="log" onclick="popDiv('login','back')">LOGIN</span> |
+	<a id="reg" href="../register/register.html">REGISTER</a></span>
+	<div id="back">
+    <div id="login"> 
+        <div id="logincontent">
+        <div id="close" onclick="hideDiv('login','back')">Close</div>
+        <div id="loretitle">LOGIN</div><hr/>
+        <form method="post" onsubmit="">
+            account:
+            <span><input id="aclogin" type="text" placeholder="input your ID"></span><br/>        
+            password：
+            <span><input id="pwlogin" type="password" name="password" placeholder="input your password" /></span>
+            <button id="findpw" onclick="fdpw()">find password</button><br/>
+            verification：
+            <span><input type="text" id="vcin" placeholder="input reversely"></span>
+            <span id="vcre"  title="click to reload" onclick="vcre.innerHTML=createCode()"></span><br/>
+        </form><hr/>
+        <div id="bottom">
+        <span id="start" onclick="test()" >Start your trip</span><br/>
+        <a href="../register/register.html">have no account?</a>
+        </div>
+        </div>
+    </div>
+</div>
+	<div class="wrapper">
+	<div class="brand">
+		<p><a href="../home.html"><img src="../image/logo1.png" class="logo"></a></p>
+	</div>
+
+	<div class="rm-container">
+	<nav class="rm-nav rm-lighten">
+		<ul>
+			<li><a href="../home.html">HOME</a>
+			</li>
+            <li><a href="../Development/origin.html">DEVELOPMENT</a>
+                <ul>
+                    <li><a href="../Development/origin.html">Origin</a></li>
+                    <li><a href="../Development/transition.html">Transition</a></li>
+                    <li><a href="../Development/progress.html">Progress</a></li>
+                    <li><a href="../Development/actuality.html">Actuality</a></li>
+                </ul>
+            </li>
+			<li><a href="../Technology/tools.html">TECHNOLOGY</a>
+				<ul>
+					<li><a href="../Technology/tools.html">Tools</a></li>
+					<li><a href="../Technology/approaches.html">Approaches</a></li>
+				</ul>
+			</li>
+			<li><a href="../Application/science.html">APPLICATION</a>
+				<ul>
+					<li><a href="../Application/science.html">Science</a></li>
+					<li><a href="../Application/economy.html">Economy</a></li>
+					<li><a href="../Application/culture.html">Culture</a></li>
+					<li><a href="../Application/life.html">Life</a></li>
+				</ul>
+			</li>
+			<li><a href="../Contradiction/contradiction.html">CONTRADICTION</a></li>
+		</ul>
+	</nav>
+</div>
+</div>
+</header>
+	<div id="qr">
+		Sweep the qr code to contact us:<br/>
+		<img src="image/qrcode.png">
+	</div>
+		<span class="mar"><img id="jc" onclick="fjc()" title="click to switch" src="image/jc1.png"></span>
+		<span class="mar"><img id="zj" onclick="fzj()" title="click to switch" src="image/zj1.png"></span>
+		<span class="mar"><img id="cjy" onclick="fcjy()" title="click to switch" src="image/cjy1.png"></span>
+		<span class="mar"><img id="qfy" onclick="fqfy()" title="click to switch" src="image/qfy1.png"></span>
+		<img id="jcqq" src="../team/image/jcqq.jpg">
+		<img id="zjqq" src="../team/image/zjqq.jpg">
+		<img id="cjyqq" src="../team/image/cjyqq.jpg">
+		<img id="qfyqq" src="../team/image/qfyqq.jpg">
+		<img id="jcgame" src="../team/image/jcgame.png">
+		<img id="zjgame" src="../team/image/zjgame.jpg">
+		<img id="cjygame" src="../team/image/cjygame.png">
+		<img id="qfygame" src="../team/image/qfygame.jpg">
+
+		<div id="footer">
+		<div id="focontet">
+			<img src="../image/logo.png" >
+			<br/><br/>More:<a href="../Team/team.html">Team</a>|<a href="../Team/contact us.html">Contact us</a><br/>
+			Data Source:<a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>|<a href="http://www.soci.org/">SCI</a>|<a href="http://www.cnki.net/">China hownet</a>|<a href="https://www.baidu.com/">Baidu</a><br/>
+		    Copyright © 2017 Terminator All Rights Reserved.
+	    </div>
+	</div>
+	</div>
+<script>vcre.innerHTML=createCode();</script>
+</body>
+</html>

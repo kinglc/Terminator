@@ -1,0 +1,52 @@
+@charset "utf-8";
+/*字体样式*/
+@font-face{
+    font-family: Y2K_neophyte;
+    src:url("../font/Y2K_neophyte.ttf");
+}
+/*正文部分的CSS样式*/
+#content{    
+    left:10%;
+    width: 50%;
+    z-index: 99;
+    /*position: absolute;*/
+    margin-left: 10%;
+}
+/*侧导航栏的基本样式*/
+#subnav{
+    top: 25%;
+    position: fixed;
+    right: 3%;
+    float: left;
+    color: white;
+    border:2px solid;
+    padding:10px 15px 10px 5px; 
+    background:#000000;
+    width:20%;
+    border-radius:25px;
+    background-color:rgba(255,255,255,0.2);
+}
+/*侧导航栏表格的整体框架*/
+#subnav>ul>li{
+    list-style-type:disc;
+    font-family: Y2K_neophyte;
+    font-size: 15px;
+}
+/*侧导航栏表格中的链接的格式*/
+#subnav ul li a{
+    text-decoration: none;
+    color:#01b2f1;
+    font-family: Y2K_neophyte;
+}
+/*鼠标悬浮时的样式*/
+#subnav ul li a:hover{
+    color: white;
+}
+#subnav>ul>ul>li{
+    list-style-type:disc;
+    font-size: 10px;
+}
+/*版权区*/
+#footer{
+    bottom:10px;
+}

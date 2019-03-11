@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+<head>
+	<title>Culture</title>
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script type="text/javascript" src="../js/login.js"></script>
+	<script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+<a id="gotop"></a>
+<header>  
+<span id="logreg"><span id="log" onclick="popDiv('login','back')">LOGIN</span> |
+<a id="reg" href="../register/register.html">REGISTER</a></span>
+	<div id="back">
+    <div id="login"> 
+        <div id="logincontent">
+        <div id="close" onclick="hideDiv('login','back')">Close</div>
+        <div id="loretitle">LOGIN</div><hr/>
+        <form method="post" onsubmit="">
+            account:
+            <span><input id="aclogin" type="text" placeholder="input your ID"></span><br/>        
+            password：
+            <span><input id="pwlogin" type="password" name="password" placeholder="input your password" /></span>
+            <button id="findpw" onclick="fdpw()">find password</button><br/>
+            verification：
+            <span><input type="text" id="vcin" placeholder="input reversely"></span>
+            <span id="vcre"  title="click to reload" onclick="vcre.innerHTML=createCode()"></span><br/>
+        </form><hr/>
+        <div id="bottom">
+        <span id="start" onclick="test()" >Start your trip</span><br/>
+        <a href="../register/register.html">have no account?</a>
+        </div>
+        </div>
+    </div>
+</div>
+	<div class="wrapper">
+	<div class="brand">
+		<p><a href="../home.html"><img src="../image/logo.jpg" class="logo"></a></p>
+	</div>
+
+	<div class="rm-container">
+	<nav class="rm-nav rm-lighten">
+		<ul>
+			<li><a href="../home.html">HOME</a>
+			</li>
+            <li><a href="../Development/origin.html">DEVELOPMENT</a>
+                <ul>
+                    <li><a href="../Development/origin.html">Origin</a></li>
+                    <li><a href="../Development/transition.html">Transition</a></li>
+                    <li><a href="../Development/progress.html">Progress</a></li>
+                    <li><a href="../Development/actuality.html">Actuality</a></li>
+                </ul>
+            </li>
+			<li><a href="../Technology/tools.html">TECHNOLOGY</a>
+				<ul>
+					<li><a href="../Technology/tools.html">Tools</a></li>
+					<li><a href="../Technology/approaches.html">Approaches</a></li>
+				</ul>
+			</li>
+			<li><a href="../Application/science.html">APPLICATION</a>
+				<ul>
+					<li><a href="../Application/science.html">Science</a></li>
+					<li><a href="../Application/economy.html">Economy</a></li>
+					<li><a href="../Application/culture.html">Culture</a></li>
+					<li><a href="../Application/life.html">Life</a></li>
+				</ul>
+			</li>
+			<li><a href="../Contradiction/contradiction.html">CONTRADICTION</a></li>
+		</ul>
+	</nav>
+</div>
+</div>
+</header>
+	<a href="#gotop"><img id="top" src="../image/top.png"></a>
+	<div id="content">
+	<div id="maintitle">
+		<h1>Culture</h1>
+	</div><hr/>
+	<div class="title">
+		<h2>Education</h2>
+	</div>
+	<div class="imgleft"><img src="image/culture1.png"></div>
+		<p>There are a number of companies that create robots to teach subjects to children ranging from biology to computer science, though such tools have not become widespread yet. There have also been a rise of intelligent tutoring systems, or ITS, in higher education. For example, an ITS called SHERLOCK teaches Air Force technicians to diagnose electrical systems problems in aircraft. Another example is DARPA, Defense Advanced Research Projects Agency, which used AI to develop a digital tutor to train its Navy recruits in technical skills in a shorter amount of time.Universities have been slow in adopting AI technologies due to either a lack of funding or skepticism of the effectiveness of these tools, but in the coming years more classrooms will be utilizing technologies such as ITS to complement teachers.</p>
+		<p>Advancements in natural language processing, combined with machine learning, have also enabled automatic grading of assignments as well as a data-driven understanding of individual students' learning needs. This led to an explosion in popularity of MOOCs, or Massive Open Online Courses, which allows students from around the world to take classes online. Data sets collected from these large scale online learning systems have also enabled learning analytics, which will be used to improve the quality of learning at scale. Examples of how learning analytics can be used to improve the quality of learning include predicting which students are at risk of failure and analyzing student engagement.</p>
+	<br/><hr/>
+
+	<div class="title">
+		<h2>Music</h2>
+	</div>
+	<div class="imgright"><img src="image/culture2.jpg"></div>
+		<p>While the evolution of music has always been affected by technology, artificial intelligence has enabled, through scientific advances, to emulate, at some extent, human-like composition.</p>
+		<p>Among notable early efforts, David Cope created an AI called Emily Howell that managed to become well known in the field of Algorithmic Computer Music.The algorithm behind Emily Howell is registered as a US patent.</p>
+		<p>The AI Iamus created 2012 the first complete classical album fully composed by a computer.</p>
+		<p>Other endeavours, like AIVA (Artificial Intelligence Virtual Artist), focus on composing symphonic music, mainly classical music for film scores.It achieved a world first by becoming the first virtual composer to be recognized by a musical professional association.</p>
+		<p>Artificial intelligences can even produce music usable in a medical setting, with Melomics's effort to use computer-generated music for stress and pain relief.</p>
+		<p>Moreover, initiatives such as Google Magenta, conducted by the Google Brain team, want to find out if an artificial intelligence can be capable of creating compelling art.</p>
+		<p>At Sony CSL Research Laboratory, their Flow Machines software has created pop songs by learning music styles from a huge database of songs. By analyzing unique combinations of styles and optimizing techniques, it can compose in any style.</p>
+	<br/><hr/>
+
+	<div class="title">
+		<h2>News, publishing and writing</h2>
+	</div>
+	<div class="imgleft"><img src="image/culture3.jpg"></div>
+		<p>The company Narrative Science makes computer generated news and reports commercially available, including summarizing team sporting events based on statistical data from the game in English. It also creates financial reports and real estate analyses.Similarly, the company Automated Insights generates personalized recaps and previews for Yahoo Sports Fantasy Football.The company is projected to generate one billion stories in 2014, up from 350 million in 2013.</p>
+		<p>Echobox is a software company that helps publishers increase traffic by 'intelligently' posting articles on social media platforms such as Facebook and Twitter.By analysing large amounts of data, it learns how specific audiences respond to different articles at different times of the day. It then chooses the best stories to post and the best times to post them. It uses both historical and real-time data to understand to what has worked well in the past as well as what is currently trending on the web.</p>
+		<p>Another company, called Yseop, uses artificial intelligence to turn structured data into intelligent comments and recommendations in natural language. Yseop is able to write financial reports, executive summaries, personalized sales or marketing documents and more at a speed of thousands of pages per second and in multiple languages including English, Spanish, French & German.</p>
+		<p>Boomtrain's is another example of AI that is designed to learn how to best engage each individual reader with the exact articles sent through the right channel at the right time that will be most relevant to the reader. It's like hiring a personal editor for each individual reader to curate the perfect reading experience.</p>
+		<p>There is also the possibility that AI will write work in the future. In 2016, a Japanese AI co-wrote a short story and almost won a literary prize.</p>
+	<br/><hr/>
+
+	<div class="title">
+		<h2>Toys and games</h2>
+	</div>
+	<div class="imgright"><img src="image/culture4.jpg"></div>
+		<p>The 1990s saw some of the first attempts to mass-produce domestically aimed types of basic Artificial Intelligence for education, or leisure. This prospered greatly with the Digital Revolution, and helped introduce people, especially children, to a life of dealing with various types of Artificial Intelligence, specifically in the form of Tamagotchis and Giga Pets, iPod Touch, the Internet, and the first widely released robot, Furby. A mere year later an improved type of domestic robot was released in the form of Aibo, a robotic dog with intelligent features and autonomy.</p>
+		<p>Companies like Mattel have been creating an assortment of AI-enabled toys for kids as young as age three. Using proprietary AI engines and speech recognition tools, they are able to understand conversations, give intelligent responses and learn quickly.</p>
+		<p>AI has also been applied to video games, for example video game bots, which are designed to stand in as opponents where humans aren't available or desired.</p>
+	<br/><br/><br/><br/>
+	</div>
+	</div>
+<div id="footer">
+<div id="focontet">
+	<img src="../image/logo.png" >
+			<br/><br/>More:<a href="../Team/team.html">Team</a>|<a href="../Team/contact us.html">Contact us</a><br/>
+	Data Source:<a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>|<a href="http://www.soci.org/">SCI</a>|<a href="http://www.cnki.net/">China hownet</a>|<a href="https://www.baidu.com/">Baidu</a><br/>
+    Copyright © 2017 Terminator All Rights Reserved.</div>
+</div>
+<script>vcre.innerHTML=createCode();</script>
+</body>
+</html>

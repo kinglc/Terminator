@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Contradiction</title>	
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+	<link rel="stylesheet" type="text/css" href="../css/subnav.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script type="text/javascript" src="../js/login.js"></script>
+	<script src="../js/jquery-1.8.3.min.js" type="text/javascript"></script>
+</head>
+<body>	
+<a id="gotop"></a>
+<header>
+<span id="logreg"><span id="log" onclick="popDiv('login','back')">LOGIN</span> |
+<a id="reg" href="../register/register.html">REGISTER</a></span>
+	<div id="back">
+    <div id="login"> 
+        <div id="logincontent">
+        <div id="close" onclick="hideDiv('login','back')">Close</div>
+        <div id="loretitle">LOGIN</div><hr/>
+        <form method="post" onsubmit="">
+            account:
+            <span><input id="aclogin" type="text" placeholder="input your ID"></span><br/>        
+            password：
+            <span><input id="pwlogin" type="password" name="password" placeholder="input your password" /></span>
+            <button id="findpw" onclick="fdpw()">find password</button><br/>
+            verification：
+            <span><input type="text" id="vcin" placeholder="input reversely"></span>
+            <span id="vcre"  title="click to reload" onclick="vcre.innerHTML=createCode()"></span><br/>
+        </form><hr/>
+        <div id="bottom">
+        <span id="start" onclick="test()" >Start your trip</span><br/>
+        <a href="../register/register.html">have no account?</a>
+        </div>
+        </div>
+    </div>
+</div>
+	<div class="wrapper">
+	<div class="brand">
+		<p><a href="../home.html"><img src="../image/logo.jpg" class="logo"></a></p>
+	</div>
+
+	<div class="rm-container">
+	<nav class="rm-nav rm-lighten">
+		<ul>
+			<li><a href="../home.html">HOME</a>
+			</li>
+            <li><a href="../Development/origin.html">DEVELOPMENT</a>
+                <ul>
+                    <li><a href="../Development/origin.html">Origin</a></li>
+                    <li><a href="../Development/transition.html">Trasition</a></li>
+                    <li><a href="../Development/progress.html">Progress</a></li>
+                    <li><a href="../Development/actuality.html">Actuality</a></li>
+                </ul>
+            </li>
+			<li><a href="../Technology/tools.html">TECHNOLOGY</a>
+				<ul>
+					<li><a href="../Technology/tools.html">Tools</a></li>
+					<li><a href="../Technology/approaches.html">Approaches</a></li>
+				</ul>
+			</li>
+			<li><a href="../Application/science.html">APPLICATION</a>
+				<ul>
+					<li><a href="../Application/science.html">Science</a></li>
+					<li><a href="../Application/economy.html">Economy</a></li>
+					<li><a href="../Application/culture.html">Culture</a></li>
+					<li><a href="../Application/life.html">Life</a></li>
+				</ul>
+			</li>
+			<li><a href="../Contradiction/contradiction.html">CONTRADICTION</a></li>
+		</ul>
+	</nav>
+</div>
+</div>
+    </header>
+    <a href="#gotop"><img id="top" src="../image/top.png"></a>
+	
+	<div id="subnav">
+		<ul>
+			<li><a href="#w1">Philosophy and ethics</a></li>
+			<li><a href="#w2">The limits of artificial<br />general intelligence </a></li>
+			<li><a href="#w3">Potential risks and<br />moral reasoning</a></li>
+			<ul>
+				<li><a href="#r1">Existential risk</a></li>
+				<li><a href="#r2">Devaluation of humanity</a></li>
+				<li><a href="#r3">Decrease in demand<br />for human labor</a></li>
+				<li><a href="#r4">Artificial moral agents</a></li>
+				<li><a href="#r5">Machine ethics</a></li>
+				<li><a href="#r6">Malevolent and friendly AI</a></li>
+			</ul>
+			<li><a href="#w4">Machine consciousness,<br />sentience and mind </a></li>
+			<li><a href="#w5">Superintelligence</a></li>
+		</ul>
+	</div>
+
+	<div id="content">
+		<div id="maintitle">
+			<a name="w1"></a>
+			<h1>Philosophy and ethics</h1><hr />
+		</div>
+		<p>
+			Main articles: Philosophy of artificial intelligence and Ethics of artificial intelligence
+		</p>
+		<p>
+			1.Is artificial general intelligence possible? Can a machine solve any problem that a human being can solve using intelligence? Or are there hard limits to what a machine can accomplish?
+		</p>
+		<p>
+			2.	Are intelligent machines dangerous? How can we ensure that machines behave ethically and that they are used ethically?
+		</p>
+		<p>
+			3.	Can a machine have a mind, consciousness and mental states in exactly the same sense that human beings do? Can a machine be sentient, and thus deserve certain rights? Can a machine intentionally cause harm?
+		</p>
+		<br /><hr />
+		
+		<div class="title">
+			<a name="w2"></a>
+			<h2>The limits of artificial general intelligence</h2>
+		</div>
+		<img src="image/image11.jpg" class="imgleft" width="380" height="200">
+		<p>
+			Main articles: philosophy of AI, Turing test, Physical symbol systems hypothesis, Dreyfus' critique of AI, The Emperor's New Mind, and AI effect
+		</p>
+		<p>
+			Can a machine be intelligent? Can it "think"?
+		</p>
+		<p>
+			Turing's "polite convention"<br/>
+		</p>
+		<p>
+				We need not decide if a machine can "think"; we need only decide if a machine can act as intelligently as a human being. This approach to the philosophical problems associated with artificial intelligence forms the basis of the Turing test.
+		</p>
+		<p>
+			<h3>The Dartmouth proposal</h3>
+		</p>
+		<p>
+				"Every aspect of learning or any other feature of intelligence can be so precisely described that a machine can be made to simulate it." This conjecture was printed in the proposal for the Dartmouth Conference of 1956, and represents the position of most working AI researchers.
+		</p>
+		<p>
+			<h3>Newell and Simon's physical symbol system hypothesis</h3>
+		</p>
+		<p>
+				"A physical symbol system has the necessary and sufficient means of general intelligent action." Newell and Simon argue that intelligence 	consists of formal operations on symbols. Hubert Dreyfus argued that, on the contrary, human expertise depends on unconscious instinct rather than conscious symbol manipulation and on having a "feel" for the situation rather than explicit symbolic knowledge. (See Dreyfus' critique of AI.)
+		</p>
+		<p>
+			<h3>Gödelian arguments</h3>
+		</p>
+		<p>
+				Gödel himself, John Lucas (in 1961) and Roger Penrose (in a more detailed argument from 1989 onwards) made highly technical arguments that human mathematicians can consistently see the truth of their own "Gödel statements" and therefore have computational abilities beyond that of mechanical Turing machines. However, the modern consensus in the scientific and mathematical community is that these "Gödelian arguments" fail.
+		</p>
+		<p>
+			<h3>The artificial brain argument</h3>
+		</p>
+		<p>
+				The brain can be simulated by machines and because brains are intelligent, simulated brains must also be intelligent; thus machines can be intelligent. Hans Moravec, Ray Kurzweil and others have argued that it is technologically feasible to copy the brain directly into hardware and software, and that such a simulation will be essentially identical to the original.
+		</p>
+		<p>
+			<h3>The AI effect</h3>
+		</p>
+		<p>
+				Machines are already intelligent, but observers have failed to recognize it. When Deep Blue beat Garry Kasparov in chess, the machine was acting intelligently. However, onlookers commonly discount the behavior of an artificial intelligence program by arguing that it is not "real" intelligence after all; thus "real" intelligence is whatever intelligent behavior people can do that machines still cannot. This is known as the AI Effect: "AI is whatever hasn't been done yet."
+		</p>
+		<br /><hr />
+
+		<div class="title">
+			<a name="w3"></a>
+			<h2>Potential risks and moral reasoning</h2>
+		</div>
+		<p>
+			Widespread use of artificial intelligence could have unintended consequences that are dangerous or undesirable. Scientists from the Future of Life Institute, among others, described some short-term research goals to be how AI influences the economy, the laws and ethics that are involved with AI and how to minimize AI security risks. In the long-term, the scientists have proposed to continue optimizing function while minimizing possible security risks that come along with new technologies.
+		</p>
+		<p>
+			Machines with intelligence have the potential to use their intelligence to make ethical decisions. Research in this area includes "machine ethics", "artificial moral agents", and the study of "malevolent vs. friendly AI".
+		</p>
+			<a name="r1"></a>
+			<h3>Existential risk</h3>
+		<p>
+			Main article: Existential risk from artificial general intelligence
+		</p>
+		<p>
+			The development of full artificial intelligence could spell the end of the human race. Once humans develop artificial intelligence, it will take off on its own and redesign itself at an ever-increasing rate. Humans, who are limited by slow biological evolution, couldn't compete and would be superseded.<br/>— Stephen Hawking
+		</p>
+		<p>
+			A common concern about the development of artificial intelligence is the potential threat it could pose to mankind. This concern has recently gained attention after mentions by celebrities including Stephen Hawking, Bill Gates, and Elon Musk. A group of prominent tech titans including Peter Thiel, Amazon Web Services and Musk have committed $1billion to OpenAI a nonprofit company aimed at championing responsible AI development. The opinion of experts within the field of artificial intelligence is mixed, with sizable fractions both concerned and unconcerned by risk from eventual superhumanly-capable AI.
+		</p>
+		<p>
+			In his book Superintelligence, Nick Bostrom provides an argument that artificial intelligence will pose a threat to mankind. He argues that sufficiently intelligent AI, if it chooses actions based on achieving some goal, will exhibit convergent behavior such as acquiring resources or protecting itself from being shut down. If this AI's goals do not reflect humanity's - one example is an AI told to compute as many digits of pi as possible - it might harm humanity in order to acquire more resources or prevent itself from being shut down, ultimately to better achieve its goal.
+		</p>
+		<p>
+			For this danger to be realized, the hypothetical AI would have to overpower or out-think all of humanity, which a minority of experts argue is a possibility far enough in the future to not be worth researching. Other counterarguments revolve around humans being either intrinsically or convergently valuable from the perspective of an artificial intelligence.
+		</p>
+		<p>
+			Concern over risk from artificial intelligence has led to some high-profile donations and investments. In January 2015, Elon Musk donated ten million dollars to the Future of Life Institute to fund research on understanding AI decision making. The goal of the institute is to "grow wisdom with which we manage" the growing power of technology. Musk also funds companies developing artificial intelligence such as Google DeepMind and Vicarious to "just keep an eye on what's going on with artificial intelligence. I think there is potentially a dangerous outcome there."
+		</p>
+		<p>
+		<p>
+			Development of militarized artificial intelligence is a related concern. Currently, 50+ countries are researching battlefield robots, including the United States, China, Russia, and the United Kingdom. Many people concerned about risk from superintelligent AI also want to limit the use of artificial soldiers.
+		</p>
+		<br />
+			<img src="image/image10.jpg" class="imgright" width="420" height="240">
+			<a name="r2"></a>
+			<h3>Devaluation of humanity</h3>
+		<p>
+			Main article: Computer Power and Human Reason
+		</p>
+		<p>
+			Joseph Weizenbaum wrote that AI applications cannot, by definition, successfully simulate genuine human empathy and that the use of AI technology in fields such as customer service or psychotherapy was deeply misguided. Weizenbaum was also bothered that AI researchers (and some philosophers) were willing to view the human mind as nothing more than a computer program (a position now known as computationalism). To Weizenbaum these points suggest that AI research devalues human life.
+		</p>
+			<a name="r3"></a>
+			<h3>Decrease in demand for human labor</h3>
+		<p>
+			Martin Ford, author of The Lights in the Tunnel: Automation, Accelerating Technology and the Economy of the Future, and others argue that specialized artificial intelligence applications, robotics and other forms of automation will ultimately result in significant unemployment as machines begin to match and exceed the capability of workers to perform most routine and repetitive jobs. Ford predicts that many knowledge-based occupations—and in particular entry level jobs—will be increasingly susceptible to automation via expert systems, machine learning and other AI-enhanced applications. AI-based applications may also be used to amplify the capabilities of low-wage offshore workers, making it more feasible to outsource knowledge work.
+		</p>
+			<a name="r4"></a>
+			<h3>Artificial moral agents</h3>
+		<p>
+			This raises the issue of how ethically the machine should behave towards both humans and other AI agents. This issue was addressed by Wendell Wallach in his book titled Moral Machines in which he introduced the concept of artificial moral agents (AMA). For Wallach, AMAs have become a part of the research landscape of artificial intelligence as guided by its two central questions which he identifies as "Does Humanity Want Computers Making Moral Decisions" and "Can (Ro)bots Really Be Moral". For Wallach the question is not centered on the issue of whether machines can demonstrate the equivalent of moral behavior in contrast to the constraints which society may place on the development of AMAs.
+		</p>
+			<a name="r5"></a>
+			<h3>Machine ethics</h3>
+		<p>
+			Main article: Machine ethics
+		</p>
+		<p>
+			The field of machine ethics is concerned with giving machines ethical principles, or a procedure for discovering a way to resolve the ethical dilemmas they might encounter, enabling them to function in an ethically responsible manner through their own ethical decision making. The field was delineated in the AAAI Fall 2005 Symposium on Machine Ethics: "Past research concerning the relationship between technology and ethics has largely focused on responsible and irresponsible use of technology by human beings, with a few people being interested in how human beings ought to treat machines. In all cases, only human beings have engaged in ethical reasoning. The time has come for adding an ethical dimension to at least some machines. Recognition of the ethical ramifications of behavior involving machines, as well as recent and potential developments in machine autonomy, necessitate this. In contrast to computer hacking, software property issues, privacy issues and other topics normally ascribed to computer ethics, machine ethics is concerned with the behavior of machines towards human users and other machines. Research in machine ethics is key to alleviating concerns with autonomous systems—it could be argued that the notion of autonomous machines without such a dimension is at the root of all fear concerning machine intelligence. Further, investigation of machine ethics could enable the discovery of problems with current ethical theories, advancing our thinking about Ethics." Machine ethics is sometimes referred to as machine morality, computational ethics or computational morality. A variety of perspectives of this nascent field can be found in the collected edition "Machine Ethics" that stems from the AAAI Fall 2005 Symposium on Machine Ethics.
+		</p>
+			<a name="r6"></a>
+			<h3>Malevolent and friendly AI</h3>
+		<p>
+			Main article: Friendly AI
+		</p>
+		<p>
+			Political scientist Charles T. Rubin believes that AI can be neither designed nor guaranteed to be benevolent. He argues that "any sufficiently advanced benevolence may be indistinguishable from malevolence." Humans should not assume machines or robots would treat us favorably, because there is no a priori reason to believe that they would be sympathetic to our system of morality, which has evolved along with our particular biology (which AIs would not share). Hyper-intelligent software may not necessarily decide to support the continued existence of mankind, and would be extremely difficult to stop. This topic has also recently begun to be discussed in academic publications as a real source of risks to civilization, humans, and planet Earth.
+		</p>
+		<p>
+			Physicist Stephen Hawking, Microsoft founder Bill Gates, and SpaceX founder Elon Musk have expressed concerns about the possibility that AI could evolve to the point that humans could not control it, with Hawking theorizing that this could "spell the end of the human race".
+		</p>
+		<p>
+			One proposal to deal with this is to ensure that the first generally intelligent AI is 'Friendly AI', and will then be able to control subsequently developed AIs. Some question whether this kind of check could really remain in place.
+		</p>
+		<p>
+			Leading AI researcher Rodney Brooks writes, "I think it is a mistake to be worrying about us developing malevolent AI anytime in the next few hundred years. I think the worry stems from a fundamental error in not distinguishing the difference between the very real recent advances in a particular aspect of AI, and the enormity and complexity of building sentient volitional intelligence."
+		</p>
+		<br /><hr />		
+
+		<div class="title">
+			<a name="w4"></a>
+			<h2>Machine consciousness, sentience and mind</h2>
+		</div>
+		<img src="image/image12.jpg" class="imgleft" width="360" height="280">
+		<p>
+			Main article: Artificial consciousness
+		</p>
+		<p>
+			If an AI system replicates all key aspects of human intelligence, will that system also be sentient – will it have a mind which has conscious experiences? This question is closely related to the philosophical problem as to the nature of human consciousness, generally referred to as the hard problem of consciousness.
+		</p>
+		<br />
+			<h3>Consciousness</h3>
+		<p>
+			Main articles: Hard problem of consciousness and Theory of mind
+		</p>
+		<p>
+	 		This section needs expansion. You can help by adding to it.
+	 	</p>
+			
+			<h3>Computationalism and functionalism</h3>
+		<p>
+			Main articles: Computationalism and Functionalism (philosophy of mind)
+		</p>
+		<p>
+			Computationalism is the position in the philosophy of mind that the human mind or the human brain (or both) is an information processing system and that thinking is a form of computing. Computationalism argues that the relationship between mind and body is similar or identical to the relationship between software and hardware and thus may be a solution to the mind-body problem. This philosophical position was inspired by the work of AI researchers and cognitive scientists in the 1960s and was originally proposed by philosophers Jerry Fodor and Hilary Putnam.
+		</p>
+
+			<h3>Strong AI hypothesis</h3>
+		<p>
+			Main article: Chinese room
+		</p>
+		<p>
+			The philosophical position that John Searle has named "strong AI" states: "The appropriately programmed computer with the right inputs and outputs would thereby have a mind in exactly the same sense human beings have minds." Searle counters this assertion with his Chinese room argument, which asks us to look inside the computer and try to find where the "mind" might be.
+		</p>
+
+			<h3>Robot rights</h3>
+		<p>
+			Main article: Robot rights
+		</p>
+		<p>
+			Mary Shelley's Frankenstein considers a key issue in the ethics of artificial intelligence: if a machine can be created that has intelligence, could it also feel? If it can feel, does it have the same rights as a human? The idea also appears in modern science fiction, such as the film A.I.: Artificial Intelligence, in which humanoid machines have the ability to feel emotions. This issue, now known as "robot rights", is currently being considered by, for example, California's Institute for the Future, although many critics believe that the discussion is premature. Some critics of transhumanism argue that any hypothetical robot rights would lie on a spectrum with animal rights and human rights. The subject is profoundly discussed in the 2010 documentary film Plug & Pray.
+		</p>
+	
+		<br /><hr />
+		<div class="title">
+			<a name="w5"></a>
+			<h2>Superintelligence</h2>
+		</div>
+		<p>
+			Main article: Superintelligence
+		</p>
+		<p>
+			Are there limits to how intelligent machines – or human-machine hybrids – can be? A superintelligence, hyperintelligence, or superhuman intelligence is a hypothetical agent that would possess intelligence far surpassing that of the brightest and most gifted human mind. ‘’Superintelligence’’ may also refer to the form or degree of intelligence possessed by such an agent. 
+		</p>
+			
+			<h3>Technological singularity</h3>
+		<p>
+			Main articles: Technological singularity and Moore's law
+		</p>
+		<p>
+			If research into Strong AI produced sufficiently intelligent software, it might be able to reprogram and improve itself. The improved software would be even better at improving itself, leading to recursive self-improvement. The new intelligence could thus increase exponentially and dramatically surpass humans. Science fiction writer Vernor Vinge named this scenario "singularity". Technological singularity is when accelerating progress in technologies will cause a runaway effect wherein artificial intelligence will exceed human intellectual capacity and control, thus radically changing or even ending civilization. Because the capabilities of such an intelligence may be impossible to comprehend, the technological singularity is an occurrence beyond which events are unpredictable or even unfathomable. 
+		</p>
+		<p>
+			Ray Kurzweil has used Moore's law (which describes the relentless exponential improvement in digital technology) to calculate that desktop computers will have the same processing power as human brains by the year 2029, and predicts that the singularity will occur in 2045. 
+		</p>
+		<br />
+			<img src="image/image9.jpg" class="imgleft" width="460" height="260">
+			<h3>Transhumanism</h3>
+		<p>
+			Main article: Transhumanism
+		</p>
+		<p>
+			You awake one morning to find your brain has another lobe functioning. Invisible, this auxiliary lobe answers your questions with information beyond the realm of your own memory, suggests plausible courses of action, and asks questions that help bring out relevant facts. You quickly come to rely on the new lobe so much that you stop wondering how it works. You just use it. This is the dream of artificial intelligence.— Byte, April 1985
+		</p>
+		<p>
+			Robot designer Hans Moravec, cyberneticist Kevin Warwick and inventor Ray Kurzweil have predicted that humans and machines will merge in the future into cyborgs that are more capable and powerful than either. This idea, called transhumanism, which has roots in Aldous Huxley and Robert Ettinger, has been illustrated in fiction as well, for example in the manga Ghost in the Shell and the science-fiction series Dune.
+		</p>
+		<p>
+			In the 1980s artist Hajime Sorayama's Sexy Robots series were painted and published in Japan depicting the actual organic human form with lifelike muscular metallic skins and later "the Gynoids" book followed that was used by or influenced movie makers including George Lucas and other creatives. Sorayama never considered these organic robots to be real part of nature but always unnatural product of the human mind, a fantasy existing in the mind even when realized in actual form. 
+		</p>
+		<p>
+			Edward Fredkin argues that "artificial intelligence is the next stage in evolution", an idea first proposed by Samuel Butler's "Darwin among the Machines" (1863), and expanded upon by George Dyson in his book of the same name in 1998.
+		</p>
+	<br /><br /><br /><br />
+	</div>
+
+	<div id="footer">
+        <div id="focontet">
+            <img src="../image/logo.png" >
+			<br/><br/>More:<a href="../Team/team.html">Team</a>|<a href="../Team/contact us.html">Contact us</a><br/>
+            Data Source:<a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a>|<a href="http://www.soci.org/">SCI</a>|<a href="http://www.cnki.net/">China hownet</a>|<a href="https://www.baidu.com/">Baidu</a><br/>
+            Copyright © 2017 Terminator All Rights Reserved.
+        </div>
+    </div>
+<script>vcre.innerHTML=createCode();</script>
+</body>
+</html>

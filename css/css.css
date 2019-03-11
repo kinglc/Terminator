@@ -1,0 +1,321 @@
+﻿@charset "utf-8";
+@font-face{
+    font-family: Y2K_neophyte;
+    src:url("../font/Y2K_neophyte.ttf");
+}
+@font-face{
+    font-family: hotpizza;
+    src:url("../font/hotpizza.ttf");
+}
+@font-face{
+    font-family: Y2K_neophyte_italic;
+    src:url("../font/Y2K_neophyte_italic.ttf");
+}
+@font-face{
+    font-family: Bitter-Bold;
+    src:url("../font/Bitter-Bold.ttf");
+}
+@font-face{
+    font-family: Fertigo Pro Regular;
+    src:url("../font/Fertigo Pro Regular.ttf");
+}
+body{
+    background-image:url("../image/back.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(12,17,20);
+}
+p{
+    font-family: Fertigo Pro Regular ;
+}
+/*文本内容*/
+#content{
+    width: 50%;
+    text-indent: 25px;
+    background-color: rgba(79,79,79,0.1);
+    padding:30px;
+    margin:0 auto;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 20px;
+    color: #a2b0c2;
+    margin-top: 280px;
+    font-family: Fertigo Pro Regular ;
+}
+h1{
+    font-size: 40px;
+    font-family: Y2K_neophyte;
+}
+h2{
+    font-size: 30px;
+    font-family: Y2K_neophyte_italic;
+}
+/*文本主标题*/
+#maintitle{
+    font-size:35px;
+    text-align: center;
+    font-family: hotpizza;
+}
+/*分文本标题*/
+.title{
+    font-size: 25px;
+    font-family: Y2K_neophyte_italic;
+    font-style: italic;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+p{
+    margin-bottom: -4px;
+}
+/*设置图片居左*/
+.imgleft{
+    float: left;
+    padding-top: 6px;
+    margin-right: 20px;
+}
+/*图片居右*/
+.imgright{
+    float: right;
+    padding-top: 6px;
+    margin-left: 20px;
+}
+#top{
+    width: 70px;
+    height: 70px;
+    position:fixed;
+    right:40px;
+    bottom:20px;
+    opacity: 0.5;
+}
+#top:hover{
+    opacity: 1;
+}
+/*导航栏最外围框架*/
+.wrapper {
+    left: 30%;
+    max-width: 1060px;
+    padding: 1px 3em;
+    height: 100%;
+}
+/*logo+导航栏+登录注册*/
+header {
+    background-color: #0E0C0C;
+    margin: 0;
+    font-size: 16px;
+    height: 80px;
+    font-family: hotpizza, sans-serif;
+    line-height: 1.5;
+}
+header:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+/*logo*/
+.brand{
+     font-family: hotpizza, sans-serif;
+     font-weight: 400;
+     letter-spacing: 1px;
+     
+ 
+}
+
+.main .dev-output pre {
+    overflow: auto;
+    max-height: 500px;
+    background-color: #EBF4FD;
+    padding: 0 1em 1em;
+}
+.brand {
+    float: left;
+    height: 80px;
+}
+.brand p {
+    margin: 0;
+}
+/*导航栏ul间距*/
+.rm-nav {
+    letter-spacing: 1px;
+}
+.logo {
+    font-size: 1.4em;
+    line-height: 40px;
+    margin: 0px 0 0;
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 0;
+}
+/*导航栏UL链接及二级链接*/
+.rm-container.rm-layout-expanded {
+    float: right;
+}
+.rm-nav li a,
+.rm-top-menu a {
+    padding: .75rem 1rem;
+    font-size: .9em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+.rm-layout-expanded .rm-nav > ul > li > a,
+.rm-layout-expanded .rm-top-menu > .rm-menu-item > a {
+    height: 80px;
+    line-height: 80px;
+}
+
+/*导航栏背景颜色*/
+.rm-nav ul,
+.rm-menu {
+    background-color: rgb(0, 0, 0);
+    margin-top: 0;
+    margin-right: 50px;
+}
+/*导航栏链接统一固定间距*/
+.rm-nav > ul,
+.rm-top-menu {
+    clear: both;
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    zoom: 1;
+}
+
+.rm-nav li,
+.rm-menu-item {
+    position: relative;
+}
+
+.rm-nav li a,
+.rm-menu-item a {
+    padding: 0.75em 1em;
+    display: block;
+    position: relative;
+    color:#fff;
+    text-decoration: none;
+}
+
+.rm-nav li ul,
+.rm-menu-item .rm-menu {
+    width: 100%;
+    padding:0;
+    margin-left: 0;
+    list-style: none;
+    z-index: 500;
+    zoom: 1;
+}
+
+.rm-css-animate {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+}
+/*鼠标放置链接响应事件*/
+.rm-lighten li li li a,
+.rm-lighten li li a:focus,
+.rm-lighten li li a:hover,
+.rm-lighten li li.rm-hover a,
+.rm-lighten .rm-menu-expanded li a:focus,
+.rm-lighten .rm-menu-expanded li a:hover,
+.rm-lighten .rm-menu-item .rm-menu-item .rm-menu-item a,
+.rm-lighten .rm-menu-item .rm-menu-item a:focus,
+.rm-lighten .rm-menu-item .rm-menu-item a:hover,
+.rm-lighten .rm-menu-item .rm-menu-item.rm-hover a,
+.rm-lighten .rm-menu-expanded li a:focus,
+.rm-lighten .rm-menu-expanded li a:hover {
+    background-color: rgb(96, 96, 96); /* fallback */
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.rm-lighten li li li a:focus,
+.rm-lighten li li li a:hover,
+.rm-lighten li li li.rm-hover a,
+.rm-lighten li .rm-menu-expanded a:focus,
+.rm-lighten li .rm-menu-expanded a:hover,
+.rm-lighten .rm-menu-item .rm-menu-item .rm-menu-item a:focus,
+.rm-lighten .rm-menu-item .rm-menu-item .rm-menu-item a:hover,
+.rm-lighten .rm-menu-item .rm-menu-item .rm-menu-item.rm-hover a,
+.rm-lighten .rm-menu-item .rm-menu-expanded a:focus,
+.rm-lighten .rm-menu-item .rm-menu-expanded a:hover {
+    background-color: rgb(128, 128, 128); /* fallback */
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.rm-layout-expanded .rm-nav > ul > li,
+.rm-layout-expanded .rm-top-menu > .rm-menu-item {
+    float: left;
+}
+
+.rm-layout-expanded li ul,
+.rm-layout-expanded .rm-menu-item .rm-menu {
+    width: 12em;
+    position: absolute;
+    left: 0;
+}
+
+.rm-layout-expanded .rm-menu-item a,
+.rm-layout-expanded .rm-menu-item a {
+    padding-left: 1em;
+}
+
+.rm-calculate {
+    position: absolute !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+/*二级导航栏长宽*/
+.rm-layout-expanded .rm-nav > ul > li > a,
+.rm-layout-expanded .rm-top-menu > .rm-menu-item > a {
+    height: 3em;
+    line-height: 3em; 
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+/*版权区*/
+#footer{
+	width: 100%;
+	height: 100px;
+}
+#footer a{
+	color: white;
+}
+#footer a:hover{
+	color:#7F7F7F;
+}
+#focontet{
+		font-size: 17px;
+		color: white;
+		width: 600px;
+		height: 100px;
+		margin:0 auto;
+		text-align: center;
+		font-weight: lighter;
+}
+#footer img{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+/*login、register按钮*/
+#logreg{
+    position: absolute;
+    right: 40px;
+    color: white;
+    font-family: Bitter-Bold;
+}
+#logreg a{
+    color: white;
+    text-decoration: none;
+    font-family: Bitter-Bold;
+}
+#log:hover,#reg:hover{
+    color: blue;
+    cursor: pointer;
+}

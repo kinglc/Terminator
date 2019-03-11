@@ -1,0 +1,84 @@
+﻿@charset="utf-8"
+*{
+	margin:0;
+}
+body{
+	font-size: 30px;
+	overflow: hidden;
+	background-image: url('../team/image/back.jpg');
+}
+/*导航部分透明*/
+header,.rm-nav ul,.nav li{
+	background-color: rgba(0,0,0,0);
+}
+.logo{
+	position: absolute;
+	top: -10px;
+	left: 5%;
+	width: 180px;
+	height: 120px;
+}
+#footer{
+	position: absolute;
+	bottom: 0;
+}
+/*头像大小*/
+.mar img{
+
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	opacity: 0.7;
+}
+/*四人头像分别位置*/
+#jc{
+	top: 45%;
+	left: 20px;
+	position: absolute;
+}
+#cjy{
+	top: 45%;
+	right: 20px;
+	position: absolute;
+}
+#zj{
+	top: 45%;
+	left:30%;
+	position: absolute;
+}
+#qfy{
+	top: 45%;
+	left:70%;
+	position: absolute;
+}
+/*二维码*/
+#qr{
+	font-size: 20px;
+	color: white;
+	position: absolute;
+	left: 40%;
+	top: 35%;
+}
+#qr img{
+	width: 200px;
+	height: 200px;
+	margin-left:50px;
+}
+/*游戏事件*/
+#jcgame,#zjgame,#cjygame,#qfygame{
+	position: absolute;
+	width: 20%;
+	height: 60%;	
+	left:40%;
+	top: 20%;
+	display: none;
+}
+/*联系方式事件*/
+#jcqq,#zjqq,#cjyqq,#qfyqq{
+	position: absolute;
+	width: 20%;
+	height: 65%;
+	left: 40%;
+	top: 20%;
+	display: none;
+}
